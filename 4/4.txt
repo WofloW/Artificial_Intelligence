@@ -1,0 +1,53 @@
+CS 662
+Artificial Intelligence Programming Homework #4
+First Order Logic, Probabilities and NLP
+
+Due: Friday, 10/18, midnight
+
+The goal of this assignment is to provide a deeper understanding of topics for which we will not have programming assignments. Please prepare a document entitled assignment4 in either Word, PDF or plain text format and submit it to Canvas. Show all your work as applicable.
+
+First order logic and inference.
+
+1. (4.5%) Write the following sentences in First-order logic
+
+o Any mortal holding the Ring will be tempted.
+o Frodo is a hobbit.
+o Hobbits are mortals.
+o Anyone who is tempted will put on the Ring.
+o If Frodo is not holding the ring, then Gandalf is holding it.
+
+o Gandalf is not holding the Ring.
+
+You should use the following predicates: mortal(x), holding(x,y), tempted(x), hobbit(x), putOn(x,y).
+
+2. (4.5%) Show that Frodo has put on the Ring using forward chaining. On each step, show the facts added to the KB and the list of substitutions.
+
+3. (4.5%) Show that Frodo has put on the Ring using backward chaining. Begin with putOn(Frodo, Ring) and work backward. At each step, show the queue of active goals.
+
+4. (4.5%) Use resolution with refutation to show that Frodo has put on the Ring. Show each step of the proof. You will first need to convert each of the sentences to CNF.
+
+Add ~putOn(Frodo, Ring) to the KB and derive a contradiction (recall ¡°~¡± is for negation).
+
+ 
+
+ 
+
+Quantifying Uncertainty (Probabilities)
+
+5. (22%) Work problem 13.8, parts a-d, from the R&N textbook.
+
+ 
+
+6. (15%) In the days before Canvas, Joe Student comes to his professor and tells her that he forgot to bring his project to hand in, and wants to turn it in tomorrow without penalty. The professor knows that 1 time in 100, a student completes their assignment and forgets to bring it. The professor also knows that 50% of the time, a student who hasn't completed the assignment will say that they forgot it. Finally, the professor believes that 90% of the students in the class completed the assignment.
+
+What is the probability that the student actually completed the assignment?
+
+ 
+
+ 
+
+Natural Language Processing
+
+7. (21%) Work problem 23.3, parts a-d, from the R&N textbook. Part c. is asking about ambiguity as discussed on p.905.
+
+8. (24%) Work problem 23.6 from the R&N textbook; be sure to read and answer the entire question up to the start of problem 23.7. 

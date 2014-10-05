@@ -1,0 +1,61 @@
+Performance document
+
+8.
+a. Did one of the data sets prove more challenging than the others?
+
+    Yes, breast-cancer dataset is more irregular and challenging than other datasets.
+
+
+b. What was the difference between training and test set accuracy? Was your tree overfitting on any of the data sets?
+
+    The training set accuracy is much greater than the test set accuracy. My tree overfits on the training data set, but doesn't on the test data set.
+
+
+c. Did it appear that any of the datasets were noisy or had other interesting issues?
+
+    Yes, breast-cancer dataset was noisy. Even when dealing with the train data set, the accuracy isn't 100% but only 85%. I believe since the causes of breast cancer are complicated and unknown, the recurrence of breast cancer is hard to predict. It's reasonable for that much noise in this dataset.
+
+
+d. Did the trees look very different between the different folds?
+
+    For the small data sets, the trees look very different between the different folds.
+    For the big data set with little noise like nursery data set, the trees look the same between the different folds.
+    But for the big data set with noise like breast-cancer data set, the trees look different.
+
+9.
+I got the precision, recall and accuracy results both for the decision tree and zeroR algorithm dealing with lymphography dataset as below. 
+The accuracy of decision tree for test dataset is 80.0%.
+The accuracy of zeroR for test dataset is only 53.75%.
+The precision, recall and accuracy of zeroR are much worse than those of decision tree.
+
+But dealing with small data set and big dataset with noise, the accuracy of decision tree and zeroR are both bad. Sometimes zeroR is slightly better then the decision tree.
+For breast-cancer dataset:
+The accuracy of decision tree for test dataset is 66.9%.
+The accuracy of zeroR for test dataset is 71.4%.
+
+
+#####   lymphography.arff dataset   #####
+#####   The performance of decision tree   #####
+     test_precision:
+       ['3:84.37%', '2:82.00%', '4:25.00%']
+     test_recall:
+       ['3:72.72%', '2:89.23%', '4:25.00%']
+     test_accuracy: 80.000000%
+
+     training_precision:
+       ['1:100.00%', '3:100.00%', '2:100.00%', '4:100.00%']
+     training_recall:
+       ['1:100.00%', '3:100.00%', '2:100.00%', '4:100.00%']
+     training_accuracy: 100.000000%
+#####   The performance of zeroR   #####
+     test_precision:
+       ['3:20.62%', '2:33.12%', '4:0.00%']
+     test_recall:
+       ['3:40.00%', '2:60.00%', '4:0.00%']
+     test_accuracy: 53.750000%
+
+     training_precision:
+       ['1:0.00%', '3:0.00%', '2:55.34%', '4:0.00%']
+     training_recall:
+       ['1:0.00%', '3:0.00%', '2:100.00%', '4:0.00%']
+     training_accuracy: 55.344828%
